@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+
+<body>
+    <h3>Lista dentro de un input</h3>
+    <br>
+    <!-- El input genera coincidencias de manera nativa al escribir -->
+    <input list="legumes" id="legumes-list" type="text">
+
+    <!-- La lista toma el alto de pantalla, si se desborda muestra barra Scroll  -->
+    <datalist id="legumes">
+        <option value="Lentejas">Lentejas</option>
+        <option value="Garbanzos">Garbanzos</option>
+        <option value="Frijoles ">Frijoles </option>
+        <option value="Guisantes">Guisantes</option>
+        <option value="Habas">Habas</option>
+        <option value="Soja">Soja</option>
+    </datalist>
+
+    <br>
+    <br>
+    <!-- También puede ser, Color, Rango, tiempo...etc... -->
+    <input list="timesList" id="time-list" type="time">
+    <datalist id="timesList">
+        <option value="12:00"></option>
+        <option value="13:00"></option>
+        <option value="14:00"></option>
+        <option value="15:00"></option>
+    </datalist>
+</body>
+
+</html>

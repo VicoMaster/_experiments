@@ -1,0 +1,17 @@
+{
+  "name": "test-material-3-web-google",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@material/web": "^1.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.2.0"
+  }
+}

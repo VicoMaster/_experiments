@@ -1,0 +1,32 @@
+PS C:\Users\andro\Desktop\Test Material 3 Web Google> npm init -y
+Wrote to C:\Users\andro\Desktop\Test Material 3 Web Google\package.json:
+
+{
+  "name": "test-material-3-web-google",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+PS C:\Users\andro\Desktop\Test Material 3 Web Google> npm install @material/web --save-dev
+added 8 packages, and audited 9 packages in 7s
+
+found 0 vulnerabilities
+PS C:\Users\andro\Desktop\Test Material 3 Web Google> npm install rollup @rollup/plugin-node-resolve --save-dev
+
+added 18 packages, and audited 27 packages in 4s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\andro\Desktop\Test Material 3 Web Google> npx rollup -p @rollup/plugin-node-resolve index.js -o bundle.js
+
+index.js → bundle.js...
+created bundle.js in 664ms
+PS C:\Users\andro\Desktop\Test Material 3 Web Google> 
