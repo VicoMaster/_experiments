@@ -1,0 +1,12 @@
+//EXPORTAR TABLA A EXCEL
+function exportTableExcel() {
+    const TYPE_FILE = 'xlsx';
+    const $TABLE_OFI = document.getElementById('tablaOfi');
+    const file = XLSX.utils.table_to_book($TABLE_OFI, { sheet: "Consolidado" });
+    XLSX.write(file, { bookType: TYPE_FILE, bookSST: true, type: 'base64' });
+    XLSX.writeFile(file, `Tablero_Eva_${nombreOfi}.${TYPE_FILE}`);
+
+}
+
+
+/ExportExcel/xlsx/dist/xlsx.full.min.js',
